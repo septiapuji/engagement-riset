@@ -1,0 +1,56 @@
+{
+  "size": 1000,
+  "_source": [
+    "quoted_user_statuses_count",
+    "type",
+    "shares_count",
+    "user_followers_count",
+    "id",
+    "text",
+    "views_count",
+    "user_image",
+    "user_followers_range",
+    "reply_count",
+    "quoted_user_friends_count",
+    "user_id",
+    "retweeted_user_statuses_count",
+    "user_full_name",
+    "user_statuses_count",
+    "user_description",
+    "user_favourites_count",
+    "influence_count",
+    "created_at",
+    "user_view_count",
+    "watch_ratio",
+    "score_post",
+    "platform",
+    "quoted_user_followers_count",
+    "content_type",
+    "hour",
+    "sub_type",
+    "engagements",
+    "user_friends_count",
+    "user_created_at",
+    "likes_count",
+    "user_bot",
+    "retweeted_user_friends_count",
+    "post_url",
+    "llm_flag",
+    "dayname",
+    "retweeted_user_followers_count",
+    "range_follower",
+    "username"
+  ],
+  "query": {
+    "term": {
+      "platform": "twitter"
+    }
+  },
+  "sort": [
+    {
+      "created_at": {
+        "order": "desc"
+      }
+    }
+  ]
+}

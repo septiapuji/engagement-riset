@@ -1,0 +1,99 @@
+{
+  "total_documents": 6000,
+  "timeframe_days": 1.0,
+  "alpha_v2": 1.0,
+  "weights_v1": {
+    "repost_count": -2.973317957347495,
+    "shares_count": 1.1662869641076479,
+    "quotes_count": -6.421463768438277,
+    "views_count": 8.646009007331784,
+    "likes_count": 5.889449205364957,
+    "reply_count": 2.5617741720710696
+  },
+  "weights_v2": {
+    "facebook": {
+      "shares_count": 1.792301,
+      "likes_count": 0.441705,
+      "reply_count": 3.121736
+    },
+    "twitter": {
+      "shares_count": 5.879763,
+      "views_count": 0.0,
+      "reply_count": 5.507795,
+      "likes_count": 5.797301,
+      "quotes_count": 9.967226,
+      "bookmark_count": 9.967226
+    },
+    "instagram": {
+      "shares_count": 9.967226,
+      "reply_count": 6.507795,
+      "likes_count": 2.443664,
+      "repost_count": 9.967226
+    },
+    "tiktok": {
+      "shares_count": 2.583522,
+      "views_count": 1.8328,
+      "reply_count": 1.944858,
+      "likes_count": 1.93932,
+      "repost_count": 9.967226,
+      "bookmark_count": 9.967226
+    },
+    "youtube": {
+      "shares_count": 9.967226,
+      "views_count": 0.430008,
+      "reply_count": 2.33787,
+      "likes_count": 1.166326
+    },
+    "threads": {
+      "shares_count": 3.879763,
+      "repost_count": 3.817479,
+      "quotes_count": 5.32337,
+      "reply_count": 1.266787,
+      "likes_count": 1.733607
+    }
+  },
+  "platform_stats": {
+    "twitter": {
+      "count": 1000,
+      "avg_score_v1": 5.6111,
+      "avg_score_v2": 6.4938,
+      "max_score_v2": 1957.1242,
+      "min_score_v2": 0.0
+    },
+    "instagram": {
+      "count": 1000,
+      "avg_score_v1": 72.7565,
+      "avg_score_v2": 43.7787,
+      "max_score_v2": 25028.8432,
+      "min_score_v2": 0.0
+    },
+    "tiktok": {
+      "count": 1000,
+      "avg_score_v1": 16596.0005,
+      "avg_score_v2": 3611.2959,
+      "max_score_v2": 396131.6148,
+      "min_score_v2": 0.0
+    },
+    "youtube": {
+      "count": 1000,
+      "avg_score_v1": 4061.3474,
+      "avg_score_v2": 222.2843,
+      "max_score_v2": 34776.2948,
+      "min_score_v2": 0.0
+    },
+    "threads": {
+      "count": 1000,
+      "avg_score_v1": 101.6058,
+      "avg_score_v2": 40.2073,
+      "max_score_v2": 4511.9435,
+      "min_score_v2": 0.0
+    },
+    "facebook": {
+      "count": 1000,
+      "avg_score_v1": 1281.9538,
+      "avg_score_v2": 169.1471,
+      "max_score_v2": 25400.2289,
+      "min_score_v2": 0.0
+    }
+  }
+}
