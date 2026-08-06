@@ -186,38 +186,64 @@ Setiap dimensi (L0–L6) dihitung dari kombinasi berbobot metrik ternormalisasi 
 #### C. Reaction (L2)
 | Platform | Denominator ($E_p$) | Formula | Catatan / Fallback |
 | :--- | :--- | :--- | :--- |
-| **Instagram** | `impressions` | $	ext{norm}\left(rac{	ext{likes}}{E_p}ight)$ | — |
-| **Facebook** | `impressions` | $	ext{norm}\left(rac{	ext{likes} + 	ext{reactions\_multi}}{E_p}ight)$ | Reactions multi-tipe dijumlahkan |
-| **X** | `impressions` | $	ext{norm}\left(rac{	ext{likes}}{E_p}ight)$ | — |
-| **TikTok** | `views` | $	ext{norm}\left(rac{	ext{likes}}{E_p}ight)$ | — |
-| **YouTube** | `impressions` | $	ext{norm}\left(rac{	ext{likes}}{E_p}ight)$ | — |
-| **LinkedIn** | `impressions` | $	ext{norm}\left(rac{	ext{likes} + 	ext{reactions\_multi}}{E_p}ight)$ | — |
+| **Instagram** | `impressions` | $	ext{norm}\left(rac{	ext{likes}}{E_p}
+ight)$ | — |
+| **Facebook** | `impressions` | $	ext{norm}\left(rac{	ext{likes} + 	ext{reactions\_multi}}{E_p}
+ight)$ | Reactions multi-tipe dijumlahkan |
+| **X** | `impressions` | $	ext{norm}\left(rac{	ext{likes}}{E_p}
+ight)$ | — |
+| **TikTok** | `views` | $	ext{norm}\left(rac{	ext{likes}}{E_p}
+ight)$ | — |
+| **YouTube** | `impressions` | $	ext{norm}\left(rac{	ext{likes}}{E_p}
+ight)$ | — |
+| **LinkedIn** | `impressions` | $	ext{norm}\left(rac{	ext{likes} + 	ext{reactions\_multi}}{E_p}
+ight)$ | — |
 | **Reddit** | `views` | $	ext{norm}(	ext{comment\_rate})$ [proxy] | Reddit native memakai upvote/karma |
-| **Threads** | `impressions`* | $	ext{norm}\left(rac{	ext{likes}}{E_p}ight)$ | — |
-| **Telegram** | `views` | $	ext{norm}\left(rac{	ext{reactions}}{E_p}ight)$ | — |
+| **Threads** | `impressions`* | $	ext{norm}\left(rac{	ext{likes}}{E_p}
+ight)$ | — |
+| **Telegram** | `views` | $	ext{norm}\left(rac{	ext{reactions}}{E_p}
+ight)$ | — |
 
 #### D. Retention (L3)
 | Platform | Denominator ($E_p$) | Formula | Catatan / Fallback |
 | :--- | :--- | :--- | :--- |
-| **Instagram** | `impressions` | $0.5 \cdot \left(rac{	ext{saves}}{E_p}ight) + 0.5 \cdot \left(rac{	ext{follows}}{E_p}ight)$ | — |
-| **Facebook** | `impressions` | $0.5 \cdot \left(rac{	ext{saves}}{E_p}ight) + 0.5 \cdot \left(rac{	ext{follows}}{E_p}ight)$ | — |
-| **X** | `impressions` | $0.5 \cdot \left(rac{	ext{bookmarks}}{E_p}ight) + 0.5 \cdot \left(rac{	ext{follows}}{E_p}ight)$ | 'Saves' = Bookmarks |
-| **TikTok** | `views` | $0.5 \cdot \left(rac{	ext{favorites}}{E_p}ight) + 0.5 \cdot \left(rac{	ext{follows}}{E_p}ight)$ | 'Saves' = Favorites |
-| **YouTube** | `impressions` | $0.5 \cdot \left(rac{	ext{playlist\_adds}}{E_p}ight) + 0.5 \cdot \left(rac{	ext{subscribes}}{E_p}ight)$ | 'Saves' = Playlist Add |
+| **Instagram** | `impressions` | $0.5 \cdot \left(rac{	ext{saves}}{E_p}
+ight) + 0.5 \cdot \left(rac{	ext{follows}}{E_p}
+ight)$ | — |
+| **Facebook** | `impressions` | $0.5 \cdot \left(rac{	ext{saves}}{E_p}
+ight) + 0.5 \cdot \left(rac{	ext{follows}}{E_p}
+ight)$ | — |
+| **X** | `impressions` | $0.5 \cdot \left(rac{	ext{bookmarks}}{E_p}
+ight) + 0.5 \cdot \left(rac{	ext{follows}}{E_p}
+ight)$ | 'Saves' = Bookmarks |
+| **TikTok** | `views` | $0.5 \cdot \left(rac{	ext{favorites}}{E_p}
+ight) + 0.5 \cdot \left(rac{	ext{follows}}{E_p}
+ight)$ | 'Saves' = Favorites |
+| **YouTube** | `impressions` | $0.5 \cdot \left(rac{	ext{playlist\_adds}}{E_p}
+ight) + 0.5 \cdot \left(rac{	ext{subscribes}}{E_p}
+ight)$ | 'Saves' = Playlist Add |
 | **LinkedIn** | `impressions` | $rac{	ext{follows}}{E_p}$ (bobot 100%) | Tidak ada `save` → reweighting ke `follow` |
-| **Reddit** | `views` | $0.5 \cdot \left(rac{	ext{saves}}{E_p}ight) + 0.5 \cdot \left(rac{	ext{joins}}{E_p}ight)$ | 'Follow' = Join subreddit |
+| **Reddit** | `views` | $0.5 \cdot \left(rac{	ext{saves}}{E_p}
+ight) + 0.5 \cdot \left(rac{	ext{joins}}{E_p}
+ight)$ | 'Follow' = Join subreddit |
 | **Threads** | `impressions`* | $rac{	ext{follows}}{E_p}$ (bobot 100%) | Tidak ada `save` → reweighting ke `follow` |
-| **Telegram** | `views` | $0.5 \cdot \left(rac{	ext{saved\_message}}{E_p}ight) + 0.5 \cdot \left(rac{	ext{channel\_joins}}{E_p}ight)$ | — |
+| **Telegram** | `views` | $0.5 \cdot \left(rac{	ext{saved\_message}}{E_p}
+ight) + 0.5 \cdot \left(rac{	ext{channel\_joins}}{E_p}
+ight)$ | — |
 
 #### E. Amplification (L4)
 | Platform | Denominator ($E_p$) | Formula | Catatan / Fallback |
 | :--- | :--- | :--- | :--- |
 | **Instagram** | `impressions` | $rac{	ext{shares}}{E_p}$ (bobot 100%) | Bobot repost direalokasi ke share |
 | **Facebook** | `impressions` | $rac{	ext{shares}}{E_p}$ (bobot 100%) | Sama seperti Instagram |
-| **X** | `impressions` | $0.6 \cdot \left(rac{	ext{reposts}}{E_p}ight) + 0.4 \cdot \left(rac{	ext{quote\_posts}}{E_p}ight)$ | Formula penuh berlaku |
+| **X** | `impressions` | $0.6 \cdot \left(rac{	ext{reposts}}{E_p}
+ight) + 0.4 \cdot \left(rac{	ext{quote\_posts}}{E_p}
+ight)$ | Formula penuh berlaku |
 | **TikTok** | `views` | $rac{	ext{shares}}{E_p}$ (bobot 100%) | — |
 | **YouTube** | `impressions` | $rac{	ext{norm}(	ext{link\_clicks} + 	ext{subscribe\_delta})}{E_p}$ [proxy] ⚠ | Confidence rendah |
-| **LinkedIn** | `impressions` | $0.6 \cdot \left(rac{	ext{shares}}{E_p}ight) + 0.4 \cdot \left(rac{	ext{reposts}}{E_p}ight)$ | — |
+| **LinkedIn** | `impressions` | $0.6 \cdot \left(rac{	ext{shares}}{E_p}
+ight) + 0.4 \cdot \left(rac{	ext{reposts}}{E_p}
+ight)$ | — |
 | **Reddit** | `views` | $	ext{cross\_post\_rate}$ [proxy] ⚠ | Jika tak tertelusur, dimensi di-reweight |
 | **Threads** | `impressions`* | $rac{	ext{reposts}}{E_p}$ (bobot 100%) | — |
 | **Telegram** | `views` | $rac{	ext{forwards}}{E_p}$ (bobot 100%) | 'Share' = Forward |

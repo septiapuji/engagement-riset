@@ -6,21 +6,6 @@ Sistem pengolahan data media sosial dari Elasticsearch (`.env`) yang dilengkapi 
 3. **Engagement Calculation Engine (`engagement_engine.py`)**: Implementasi kalkulasi **Engagement Score V1 (Mba Ocim)** dan **V2 (New Invers Weight with Add-α Smoothing)** sesuai dokumen riset `dokumentasi_perhitungan/`.
 4. **All-in-one Pipeline (`run_pipeline.py`)**: Menjalankan crawl, merge, dan scoring dalam satu perintah.
 
----
-
-## 🛠️ Konfigurasi (`.env`)
-
-File `.env` di `pengolahan_data/.env`:
-```env
-# ==========================================
-# Access Elastic 51 AI 
-# ==========================================
-DB_HOST=192.168.180.190
-DB_PORT=5200
-# DB_USER=ingest_ai
-# DB_PASSWORD=1ngest4i2o23
-index = smm-data-hot-20260804
-```
 
 ---
 
